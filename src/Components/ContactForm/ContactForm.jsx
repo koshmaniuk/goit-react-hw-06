@@ -29,7 +29,6 @@ const ContactForm = () => {
   const numberFieldId = useId();
 
   const handleSubmit = (values, actions) => {
-    console.log({ id: nanoid(), ...values });
     actions.resetForm();
     dispatch(addContact({ id: nanoid(), ...values }));
   };
